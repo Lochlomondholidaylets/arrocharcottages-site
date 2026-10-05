@@ -1,13 +1,14 @@
 [build]
   publish = "."
 
+[[redirects]]
+  from = "/*"
+  to = "https://www.lochlomondholidaylets.co.uk/arrochar-holiday-cottages/"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
-
-[[headers]]
-  for = "/assets/*"
-  [headers.values]
-    Cache-Control = "public, max-age=3600"
